@@ -151,7 +151,8 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Tipo | BIGINT |
 | Nullable | No |
 
-Identificador da conta do jogador, chave estrangeira que vem da tabela `Jogadores`, mas retirada dos arquivos do próprio brawlhalla.
+Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
+Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela `Jogadores`.
 
 
 ## current_clan
@@ -435,7 +436,8 @@ Nulo caso a partida não seja no modo `timed`.
 
 # Tabela Jogadores
 
-Essa tabela guarda todos os jogadores registrados no Panteão de Valhalla.
+Essa tabela guarda todos os jogadores registrados no Panteão de Valhalla, sendo um cadastro de referência.
+Nenhuma tabela do banco está diretamente conectada a ela. Essa tabela serve como consulta pro sistema do PipeValhalla adquirir os dados dos jogadores.
 
 ## brawlhalla_id
 
@@ -533,7 +535,8 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Tipo | BIGINT |
 | Nullable | No |
 
-Identificador da conta do jogador, chave estrangeira que vem da tabela `Jogadores`, mas retirada dos arquivos do próprio brawlhalla.
+Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
+Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela `Jogadores`.
 
 
 
@@ -620,8 +623,8 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Tipo | BIGINT |
 | Nullable | No |
 
-Identificador da conta do jogador, chave estrangeira que vem da tabela `Jogadores`, mas retirada dos arquivos do próprio brawlhalla.
-
+Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
+Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela `Jogadores`.
 
 
 ## weapon
@@ -682,8 +685,8 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Tipo | BIGINT |
 | Nullable | No |
 
-Identificador da conta do jogador, chave estrangeira que vem da tabela `Jogadores`, mas retirada dos arquivos do próprio brawlhalla.
-
+Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
+Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela `Jogadores`.
 
 
 ## weapon
