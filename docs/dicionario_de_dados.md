@@ -603,6 +603,8 @@ Dado booleano que confirma se o jogador usou a configuração "random" (brawlhal
 
 # Tabela Armas
 
+Essa tabela registra as armas usadas pelos jogadores na partida e outros dados.
+
 ## match_id
 
 | Propriedade | Value |
@@ -664,6 +666,8 @@ Dano que o jogador recebeu enquanto segurava a arma durante a partida.
  
 
 # Tabela Ataques
+
+Essa tabela registra os ataques usados pelos jogadores em cada partida e por cada arma usada.
 
 ## match_id
 
