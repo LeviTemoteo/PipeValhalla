@@ -1,0 +1,15 @@
+venv/
+.env
+.session
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+PartidasBase
+Informacoes
+*.xlsx
+*.sql
+*.zip
+*.docx
+*.pdf
+docs
