@@ -15,6 +15,7 @@ class JSONReader:
         with open(json_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
+        logger.info(f"Conversão para json realizada: {self.file_name}")
         return data
 
     def _get_full_path(self) -> str:
