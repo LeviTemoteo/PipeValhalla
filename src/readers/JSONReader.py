@@ -9,6 +9,7 @@ class JSONReader:
         self.dir_path = Path(dir_path).expanduser()
 
     def read_match_data(self) -> dict:
+        '''Faz a leitura do json completo e retorna como dicionário'''
         json_path = self._get_full_path()
 
         with open(json_path, "r", encoding="utf-8") as file:
