@@ -1,5 +1,6 @@
 from pathlib import Path
 from log.pipelog import logger
+from datetime import datetime
 import json
 
 class JSONReader:
@@ -12,8 +13,13 @@ class JSONReader:
         '''Faz a leitura do json completo e retorna como dicionário'''
         json_path = self._get_full_path()
 
+        unix_timestamp = Path(json_path).stat().st_mtime
+        file_date = datetime.fromtimestamp(unix_timestamp).strftime("%Y/%m/%d")
+
         with open(json_path, "r", encoding="utf-8") as file:
             data = json.load(file)
+
+        data["mod_date"] = file_date
 
         logger.info(f"Conversão para json realizada: {self.file_name}")
         return data
