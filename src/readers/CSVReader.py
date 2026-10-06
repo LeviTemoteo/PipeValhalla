@@ -27,7 +27,7 @@ class CSVReader:
         return players
 
     def _transform_row(row: dict) -> dict:
-        "Converte os tipos de um dicionário para seus respectivos tipos"
+        "Converte os dados do dicionário para seus respectivos tipos"
 
         try:
             return {
