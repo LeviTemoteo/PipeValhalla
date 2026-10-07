@@ -47,12 +47,12 @@ class PlayerDAO:
         
         return True
 
-    def get_player_id(self, brawlhalla_id: int) -> dict | None:
+    def get_player_by_id(self, brawlhalla_id: int) -> list[dict] | None:
         '''Devolve um jogador pelo seu id do brawlhalla'''
         try:
             client = self.db_connection.connect()
             response = client.table("Jogadores").select("*").eq("brawlhalla_id", brawlhalla_id).execute()
-            return response.data[0] if response.data else {}
+            return response.data[0] if response.data else None
         
         except Exception as error:
             logger.error(f"Erro ao retornar o jogador {brawlhalla_id}: {error}")
@@ -71,15 +71,15 @@ class PlayerDAO:
             logger.error(f"Falha ao retornar tabela de jogadores: {error}")
             raise InterruptedError(f"Falha ao retornar tabela de jogadores: {error}")
 
-    def _format_player_row(row: dict) -> tuple:
+    def _format_player_row(self, row: dict) -> tuple:
         '''Recebe um jogador e devolve como tupla padronizada
-        (id, cla, nome, custo)
+        (id, clan, name, cost)
         '''
 
         return (
             int(row["brawlhalla_id"]),
-            int(row["cla"]) if row.get["cla"] is not None else "N/A",
-            str(row.get("nome", "")).strip(),
-            int(row.get("custo", 0))
+            int(row["clan"]) if row.get("clan") is not None else "N/A",
+            str(row.get("name", "")).strip(),
+            int(row.get("cost", 0))
         )
     
