@@ -26,15 +26,15 @@ class CSVReader:
         logger.info(f"Jogadores lidos: {len(players)}.")
         return players
 
-    def _transform_row(row: dict) -> dict:
+    def _transform_row(self, row: dict) -> dict:
         "Converte os dados do dicionário para seus respectivos tipos"
 
         try:
             return {
                 "brawlhalla_id": int(row["brawlhalla_id"].strip()),
-                "cla": int(row["cla"].strip()),
-                "nome": str(row["nome"].strip()),
-                "custo": int(row["custo"].strip())
+                "clan": int(row["clan"].strip()),
+                "name": str(row["name"].strip()),
+                "cost": int(row["cost"].strip())
             }
         except Exception as error:
             logger.error(f"Ocorreu um erro ao transformar a linha {row}: {error}")
