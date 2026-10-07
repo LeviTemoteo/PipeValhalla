@@ -106,11 +106,26 @@ class AuthService:
                             user_dict = user_data.get("user")
 
                         new_session = {
-                            "acess_token" = refresh.session.access_token,
-                            "refresh_token" = refresh.session.refresh_token,
+                            "acess_token": refresh.session.access_token,
+                            "refresh_token": refresh.session.refresh_token,
                             "user": user_dict
                         }
-    
+
+                        self._save_session(new_session)
+                        self.current_user = new_session
+
+                        self.db_connection.set_session_token(refresh.session.access_token)
+
+                        logger.info("Session renovada com o refresh token")
+                        return True
+                    
+                except Exception as error:
+                    logger.error(f"Session não renovada: {error}")
+
+            self.current_user = None
+            self._clear_session()
+            
+        return False
 
     def get_current_user(self) -> Dict[str, Any] | None:
         '''
