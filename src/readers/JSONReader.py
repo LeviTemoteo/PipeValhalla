@@ -1,6 +1,5 @@
 from pathlib import Path
 from log.pipelog import logger
-from datetime import datetime
 import json
 
 class JSONReader:
