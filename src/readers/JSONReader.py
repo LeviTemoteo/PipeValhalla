@@ -11,21 +11,16 @@ class JSONReader:
 
     def read_match_data(self) -> dict:
         '''Faz a leitura do json completo e retorna como dicionário'''
-        json_path = self._get_full_path()
-
-        unix_timestamp = Path(json_path).stat().st_mtime
-        file_date = datetime.fromtimestamp(unix_timestamp).strftime("%Y/%m/%d")
+        json_path = self.get_full_path()
 
         with open(json_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
-        data["mod_date"] = file_date
-
         logger.info(f"Conversão para json realizada: {self.file_name}")
         return data
 
-    def _get_full_path(self) -> str:
-        '''Verifica se o arquivo existe e retorna o caminho completo do arquivo'''
+    def get_full_path(self) -> str:
+        '''Verifica se o arquivo existe e retorna o caminho completo do arquivo JSON'''
 
         full_path = self.dir_path / self.file_name
 
