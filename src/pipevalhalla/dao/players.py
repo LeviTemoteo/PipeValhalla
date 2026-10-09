@@ -1,5 +1,5 @@
-from database.connection import DatabaseConnection
-from log.pipelog import logger
+from pipevalhalla.database.connection import DatabaseConnection
+from pipevalhalla.log.pipelog import logger
 
 class PlayerDAO:
     def __init__(self, db_connection: DatabaseConnection):

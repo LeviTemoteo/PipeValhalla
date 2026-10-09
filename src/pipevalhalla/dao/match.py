@@ -1,5 +1,5 @@
-from database.connection import DatabaseConnection
-from log.pipelog import logger
+from pipevalhalla.database.connection import DatabaseConnection
+from pipevalhalla.log.pipelog import logger
 from typing import Dict, Any
 
 class MatchDAO:
@@ -38,7 +38,7 @@ class MatchDAO:
 
         try:
             client = self.db_connection.connect()
-            response = client.table("Partidas").delete().eq("id_match", match_id).execute()
+            response = client.table("Partidas").delete().eq("match_id", match_id).execute()
             if response.data:
                 logger.info(f"Partida {match_id} deletada com sucesso.")
                 return True
@@ -54,7 +54,7 @@ class MatchDAO:
         client = self.db_connection.connect()
 
         try:
-            response = client.table("Partidas").select("*").eq("id_match", match_id).execute()
+            response = client.table("Partidas").select("*").eq("match_id", match_id).execute()
             if response.data:
                 logger.info(f"Partida {match_id} retornada com sucesso")
                 return response.data[0]
@@ -88,7 +88,7 @@ class MatchDAO:
             logger.error(f"Erro ao transferir header da partida: {error}")
             raise RuntimeError(f"Erro ao transferir header da partida: {error}")
         
-        return int(response.data[0]["id_match"])
+        return int(response.data[0]["match_id"])
 
     def _insert_match_players(self, match_id: int, match_data: dict, teams=False, score=False) -> None:
         '''Insere todos os jogadores presentes em uma partida no Supabase'''
@@ -136,7 +136,7 @@ class MatchDAO:
             
             players_to_insert_data.append(
                 {
-                    "id_match": match_id,
+                    "match_id": match_id,
                     "brawlhalla_id": bh_id,
                     "current_clan": current_clan,
                     "current_player_name": player_data.get("PlayerName", None),
@@ -192,7 +192,7 @@ class MatchDAO:
 
             players_to_insert_loadout.append(
                 {
-                    "id_match": match_id,
+                    "match_id": match_id,
                     "brawlhalla_id": bh_id,
                     "legend_name": player_loadout_data.get("LegendName", None),
                     "skin_name": player_loadout_data.get("SkinName", None),
@@ -242,7 +242,7 @@ class MatchDAO:
 
                 weapons_to_insert.append(
                     {
-                        "id_match": match_id,
+                        "match_id": match_id,
                         "brawlhalla_id": bh_id,
                         "weapon": weapon,
                         "time_held": weapon_data.get("TimeHeld", 0),
@@ -296,7 +296,7 @@ class MatchDAO:
 
                     attacks_to_insert.append(
                         {
-                            "id_match": match_id,
+                            "match_id": match_id,
                             "brawlhalla_id": bh_id,
                             "weapon": weapon,
                             "attack": attack,

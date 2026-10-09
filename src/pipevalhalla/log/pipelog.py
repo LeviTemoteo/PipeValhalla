@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 
-log_dir = Path("log")
+log_dir = Path("~/.pipevalhalla").expanduser()
 log_dir.mkdir(exist_ok=True)
 log_file = log_dir / "pipevalhalla.log"
 

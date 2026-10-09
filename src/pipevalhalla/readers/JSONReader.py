@@ -1,5 +1,5 @@
 from pathlib import Path
-from log.pipelog import logger
+from pipevalhalla.log.pipelog import logger
 import json
 
 class JSONReader:

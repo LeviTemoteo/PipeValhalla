@@ -4,8 +4,8 @@ import subprocess
 from pathlib import Path
 from typing import Optional, Dict, Any
 from supabase import Client
-from src.database.connection import DatabaseConnection
-from src.log.pipelog import logger
+from pipevalhalla.database.connection import DatabaseConnection
+from pipevalhalla.log.pipelog import logger
 
 class AuthService:
     '''Classe gerenciadora de autenticação, realiza validação do cadastro e sessão local'''

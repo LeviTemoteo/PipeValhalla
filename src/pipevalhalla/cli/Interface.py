@@ -1,6 +1,6 @@
 import argparse
-from auth.authenticator import AuthService
-from services.Orchestrator import PipelineOrchestrator
+from pipevalhalla.auth.authenticator import AuthService
+from pipevalhalla.services.Orchestrator import PipelineOrchestrator
 
 class CLIHandler:
 

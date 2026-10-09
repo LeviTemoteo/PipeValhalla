@@ -1,9 +1,9 @@
-from log.pipelog import logger
+from pipevalhalla.log.pipelog import logger
 from pathlib import Path
-from readers.CSVReader import CSVReader
-from readers.JSONReader import JSONReader
-from dao.match import MatchDAO
-from dao.players import PlayerDAO
+from pipevalhalla.readers.CSVReader import CSVReader
+from pipevalhalla.readers.JSONReader import JSONReader
+from pipevalhalla.dao.match import MatchDAO
+from pipevalhalla.dao.players import PlayerDAO
 from datetime import datetime
 
 class PipelineOrchestrator:
