@@ -37,7 +37,7 @@ class MatchDAO:
         '''Deleta uma partida em cascata'''
 
         try:
-            client = self.db_connection.connect()
+            client = self.db_connection.client
             response = client.table("Partidas").delete().eq("match_id", match_id).execute()
             if response.data:
                 logger.info(f"Partida {match_id} deletada com sucesso.")
@@ -51,7 +51,7 @@ class MatchDAO:
             raise RuntimeError(f"Falha ao deletar {match_id}: {error}")
 
     def get_match_by_id(self, match_id: int) -> Dict[str, Any] | None:
-        client = self.db_connection.connect()
+        client = self.db_connection.client
 
         try:
             response = client.table("Partidas").select("*").eq("match_id", match_id).execute()
@@ -80,7 +80,7 @@ class MatchDAO:
             "score_to_win": data.get("ScoreToWin", None)
             }
 
-        client = self.db_connection.connect()
+        client = self.db_connection.client
 
         try:
             response = client.table("Partidas").insert(match_header).execute()
@@ -93,7 +93,7 @@ class MatchDAO:
     def _insert_match_players(self, match_id: int, match_data: dict, teams=False, score=False) -> None:
         '''Insere todos os jogadores presentes em uma partida no Supabase'''
 
-        client = self.db_connection.connect()
+        client = self.db_connection.client
         players_to_insert = []
         players_to_insert_id = []
         i = 1
@@ -176,7 +176,7 @@ class MatchDAO:
     def _insert_loadouts(self, match_id: int, match_data: dict) -> None:
         '''Insere o loadout (cosméticos) de cada jogador no Supabase'''
 
-        client = self.db_connection.connect()
+        client = self.db_connection.client
         players_to_insert_loadout = []
         i = 1
 
@@ -218,7 +218,7 @@ class MatchDAO:
     def _insert_weapons(self, match_id: int, match_data: dict) -> None:
         '''Insere as armas usadas de cada jogador'''
         
-        client = self.db_connection.connect()
+        client = self.db_connection.client
         weapons_to_insert = []
         weapons = {"Orb", "Boots", "Unarmed", "Hammer", "Scythe", "Spear", "Sword", 
                    "Cannon", "RocketLance", "Katar", "Fists", "Axe", "Bow", "Greatsword", 
@@ -261,7 +261,7 @@ class MatchDAO:
     def _insert_attacks(self, match_id: int, match_data: dict, teams=False) -> None:
         '''Insere o ataque de cada arma de cada jogador na tabela "Ataques" '''
 
-        client = self.db_connection.connect()
+        client = self.db_connection.client
 
         attacks_to_insert = []
         attacks = ["nLight", "dLight", "sLight", "nHeavy", "dHeavy", "sHeavy", 

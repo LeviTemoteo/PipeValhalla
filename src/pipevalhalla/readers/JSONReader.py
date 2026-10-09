@@ -5,6 +5,10 @@ import json
 class JSONReader:
 
     def __init__(self, file_name: str, dir_path: str = "~/BrawlhallaStatDumps"):
+
+        if not file_name.endswith(".json"):
+            file_name += '.json'
+        
         self.file_name = Path(file_name)
         self.dir_path = Path(dir_path).expanduser()
 

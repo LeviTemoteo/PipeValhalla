@@ -8,7 +8,7 @@ class PlayerDAO:
     def sync_players(self, players_data: list[dict]) -> bool:
         '''Sincroniza os jogadores no banco de dados a partir do arquivo csv lido pelo CSVReader'''
         
-        client = self.db_connection.connect()
+        client = self.db_connection.client
         db_players = self.get_all_players()
         
         db_players_dict_tuple = {player["brawlhalla_id"]: self._format_player_row(player) for player in db_players}
@@ -50,7 +50,7 @@ class PlayerDAO:
     def get_player_by_id(self, brawlhalla_id: int) -> list[dict] | None:
         '''Devolve um jogador pelo seu id do brawlhalla'''
         try:
-            client = self.db_connection.connect()
+            client = self.db_connection.client
             response = client.table("Jogadores").select("*").eq("brawlhalla_id", brawlhalla_id).execute()
             return response.data[0] if response.data else None
         
@@ -62,7 +62,7 @@ class PlayerDAO:
         '''Pega todos os jogadores cadastrados na tabela "Jogadores" no Supabase'''
         
         try:
-            client = self.db_connection.connect()
+            client = self.db_connection.client
             response = client.table("Jogadores").select("*").execute()
             logger.info("Tabela de jogadores retornado.")
             return response.data

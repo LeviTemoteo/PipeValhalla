@@ -5,6 +5,7 @@ import csv
 class CSVReader:
 
     def __init__(self, csv_path: str):
+        self.csv_path
         self.csv_path = Path(csv_path)
 
     def read_players(self) -> list[dict]:

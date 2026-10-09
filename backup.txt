@@ -1,0 +1,4 @@
+brawlhalla_id;clan;name;cost
+6972776;0;Lancer;60
+28285499;1;meyli;80
+110036798;1;Saiki;70
