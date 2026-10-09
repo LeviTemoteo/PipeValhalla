@@ -1,4 +1,5 @@
 import argparse
+import sys
 from pipevalhalla.auth.authenticator import AuthService
 from pipevalhalla.services.Orchestrator import PipelineOrchestrator
 
@@ -9,6 +10,7 @@ class CLIHandler:
         self.pipeline = pipeline
         self.parser = argparse.ArgumentParser(prog="pipevalhalla", description="CLI que possui comandos para gerenciar o banco de dados no supabase")
         self._setup_parsers()
+        self.authenticated = auth_service.is_authenticated()
 
     def run(self, args: list = None) -> None:
         '''Função orquestradora que envia o comando do usuário para o parser e chama a função correspondente'''
@@ -53,6 +55,10 @@ class CLIHandler:
     def handle_add_match(self, args: argparse.Namespace) -> None:
         '''Trata o comando de adicionar partida'''
 
+        if not self.authenticated:
+            print("Por favor, realize o login.")
+            sys.exit()
+
         print("Enviando partida...")
 
         try:
@@ -70,6 +76,10 @@ class CLIHandler:
     def handle_delete_match(self, args: argparse.Namespace) -> None:
         '''Trata o comando de deletar partida'''
 
+        if not self.authenticated:
+            print("Por favor, realize o login.")
+            sys.exit()
+
         print("Deletando partida...")
 
         try:
@@ -86,6 +96,10 @@ class CLIHandler:
 
     def handle_import_players(self, args: argparse.Namespace) -> None:
         '''Trata o comando de envio dos jogadores'''
+
+        if not self.authenticated:
+            print("Por favor, realize o login.")
+            sys.exit()
 
         print("Sincronizando jogadores...")
 

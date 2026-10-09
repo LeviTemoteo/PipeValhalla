@@ -27,7 +27,6 @@ def main() -> None:
         player_dao = PlayerDAO(db_connection)
 
         auth_service = AuthService(db_connection)
-        auth_service.is_authenticated()
         pipeline_orchestrator = PipelineOrchestrator(match_dao, player_dao)
 
         cli = CLIHandler(auth_service, pipeline_orchestrator)
