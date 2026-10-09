@@ -36,7 +36,7 @@ Para cada partida nova registrada, seu id é incrementado em 1.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(15) |
-| Nullable | No |
+| Nullable | Yes |
 
 Versão do jogo que a partida foi registrada.
 
@@ -47,7 +47,7 @@ Versão do jogo que a partida foi registrada.
 | --- | --- |
 | Fonte | PipeValhalla |
 | Tipo | DATE |
-| Nullable | No |
+| Nullable | Yes |
 
 Data que foi registrada a partida.
 É retirado a partir da data de criação do arquivo enviado pelo usuário, então se houver alterações do arquivo, pode comprometer a validade desse dado.
@@ -59,7 +59,7 @@ Data que foi registrada a partida.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(50) |
-| Nullable | No |
+| Nullable | Yes |
 
 Nome do mapa que a partida foi jogada.
 
@@ -70,7 +70,7 @@ Nome do mapa que a partida foi jogada.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(30) |
-| Nullable | No |
+| Nullable | Yes |
 
 Modo de jogo que a partida foi jogada (por alguma razão, o writestats não permite o registro dos modos que possuem entidades diferentes de gadgets e de jogadores, como a bola do kung foot)
 
@@ -94,7 +94,7 @@ Identifica se é uma partida de equipes ou não.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | BOOLEAN |
-| Nullable | No |
+| Nullable | Yes |
 
 Identifica se o fogo amigo está ativado ou não. Obviamente sempre será falso se o dado `teams` for falso.
 
@@ -109,6 +109,13 @@ Identifica se o fogo amigo está ativado ou não. Obviamente sempre será falso 
 
 Quantidade de vidas (stocks) definidos para cada jogador.
 
+## game_duration
+
+| Propriedade | Value |
+| --- | --- |
+| Fonte | Brawlhalla |
+| Tipo | INT |
+| Nullable | No |
 
 ## score_to_win
 
@@ -148,7 +155,7 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Propriedade | Value |
 | --- | --- |
 | Fonte | Brawlhalla |
-| Tipo | BIGINT |
+| Tipo | INT |
 | Nullable | No |
 
 Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
@@ -174,7 +181,7 @@ Não confundir com o clã do jogador dentro do brawlhalla.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(100) |
-| Nullable | No |
+| Nullable | Yes |
 
 É o nome do jogador dentro do Brawlhalla naquela partida.
 Como os jogadores costumam usar e trocar de nomes comparado ao seu registro, não é utilizado como chave.
@@ -444,14 +451,11 @@ Nenhuma tabela do banco está diretamente conectada a ela. Essa tabela serve com
 | Propriedade | Value |
 | --- | --- |
 | Fonte | Brawlhalla |
-| Tipo | BIGINT |
+| Tipo | INT |
 | Nullable | No |
 
 Identificador da conta do jogador, nessa tabela é tratada como chave primária.
 O identificador do brawlhalla é um inteiro incrementado, conforme a criação de novas contas, o id recebe o valor mais recente + 1.
-
-Tratado como BIGINT, o jogo já possui mais de 100 milhões de contas diferentes.
-(Como exemplo, confira minha conta no site corehalla.com e utilize o id: 6972776)
 
 
 
@@ -532,7 +536,7 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Propriedade | Value |
 | --- | --- |
 | Fonte | Brawlhalla |
-| Tipo | BIGINT |
+| Tipo | INT |
 | Nullable | No |
 
 Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
@@ -546,7 +550,7 @@ Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(50) |
-| Nullable | No |
+| Nullable | Yes |
 
 Nome do legend usado na partida pelo jogador.
 
@@ -558,7 +562,7 @@ Nome do legend usado na partida pelo jogador.
 | --- | --- |
 | Fonte | Brawlhalla |
 | Tipo | VARCHAR(100) |
-| Nullable | No |
+| Nullable | Yes |
 
 Nome da skin usada pelo jogador.
 
@@ -622,7 +626,7 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Propriedade | Value |
 | --- | --- |
 | Fonte | Brawlhalla |
-| Tipo | BIGINT |
+| Tipo | INT |
 | Nullable | No |
 
 Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
@@ -686,7 +690,7 @@ Identificador da partida que o jogador participou, chave estrangeira que vem da 
 | Propriedade | Value |
 | --- | --- |
 | Fonte | Brawlhalla |
-| Tipo | BIGINT |
+| Tipo | INT |
 | Nullable | No |
 
 Identificador da conta do jogador, chave estrangeira que está presente na tabela `Jogadores`, mas não está apontando para essa tabela.
