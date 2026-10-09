@@ -8,6 +8,7 @@ from pipevalhalla.services.Orchestrator import PipelineOrchestrator
 from pipevalhalla.cli.Interface import CLIHandler
 from pipevalhalla.dao.match import MatchDAO
 from pipevalhalla.dao.players import PlayerDAO
+from pipevalhalla.database.connection import DatabaseConnection
 
 def main() -> None:
     load_dotenv()
@@ -20,12 +21,12 @@ def main() -> None:
         sys.exit()
 
     try:
-        supabase_client: Client = create_client(supabase_url=supabase_url, supabase_key=supabase_key)
+        db_connection = DatabaseConnection(supabase_url=supabase_url, supabase_key=supabase_key)
 
-        match_dao = MatchDAO(supabase_client)
-        player_dao = PlayerDAO(supabase_client)
+        match_dao = MatchDAO(db_connection)
+        player_dao = PlayerDAO(db_connection)
 
-        auth_service = AuthService(supabase_client)
+        auth_service = AuthService(db_connection)
         pipeline_orchestrator = PipelineOrchestrator(match_dao, player_dao)
 
         cli = CLIHandler(auth_service, pipeline_orchestrator)

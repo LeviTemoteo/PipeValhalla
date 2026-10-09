@@ -21,11 +21,15 @@ def setup_logger():
 
     file_handler.setFormatter(file_formatter)
 
-    cli_handler = logging.StreamHandler(sys.stdout)
-    cli_handler.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
 
-    cli_formatter = logging.Formatter("%(levelname)s: %(message)s")
-    cli_handler.setFormatter(cli_formatter)
+   # cli_handler = logging.StreamHandler(sys.stdout)
+   # cli_handler.setLevel(logging.INFO)
+
+   # cli_formatter = logging.Formatter("%(levelname)s: %(message)s")
+   # cli_handler.setFormatter(cli_formatter)
+
+   # logger.addHandler(cli_handler)
 
     return logger
 

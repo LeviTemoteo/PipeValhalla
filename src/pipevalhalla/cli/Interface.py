@@ -32,7 +32,7 @@ class CLIHandler:
             else:
                 print("Falha no login, verifique suas credenciais")
         except Exception as error:
-            print(f"Ocorreu um erro ao tentar o login: {error}")
+            print(f"Ocorreu um erro ao tentar o login.")
 
     def handle_logout(self, args: argparse.Namespace) -> None:
         '''Trata o comando de logout'''
@@ -48,7 +48,7 @@ class CLIHandler:
                 print("Falha no logout, não foi encontrado uma sessão local.")
 
         except Exception as error:
-            print(f"Ocorreu um erro ao tentar o logout: {error}")
+            print(f"Ocorreu um erro ao tentar o logout.")
 
     def handle_add_match(self, args: argparse.Namespace) -> None:
         '''Trata o comando de adicionar partida'''
@@ -65,7 +65,7 @@ class CLIHandler:
                 print(f"Não foi possível enviar a partida.")
 
         except Exception as error:
-            print(f"Ocorreu um erro ao enviar a partida: {error}")
+            print(f"Ocorreu um erro ao enviar a partida.")
 
     def handle_delete_match(self, args: argparse.Namespace) -> None:
         '''Trata o comando de deletar partida'''
@@ -82,7 +82,7 @@ class CLIHandler:
                 print("Não foi possível deletar a partida, verifique suas permissões.")
 
         except Exception as error:
-            print(f"Ocorreu um erro ao deletar a partida: {error}")
+            print(f"Ocorreu um erro ao deletar a partida.")
 
     def handle_import_players(self, args: argparse.Namespace) -> None:
         '''Trata o comando de envio dos jogadores'''
@@ -99,7 +99,7 @@ class CLIHandler:
                 print(f"Não foi possível sincronizar os jogadores.")
 
         except Exception as error:
-            print(f"Ocorreu um erro ao sincronizar os jogadores: {error}")
+            print(f"Ocorreu um erro ao sincronizar os jogadores.")
 
     def _setup_parsers(self) -> None:
         '''Gerencia os comandos do comando pipevalhalla'''
