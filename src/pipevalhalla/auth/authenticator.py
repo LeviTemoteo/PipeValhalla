@@ -53,6 +53,8 @@ class AuthService:
     def logout(self) -> bool:
         '''Encerra a sessão do usuário no Supabase e localmente'''
 
+        supase_logout = True
+
         try:
             self.client.auth.sign_out()
 
@@ -90,7 +92,7 @@ class AuthService:
         except Exception as error:
             logger.warning(f"Session expirada ou invalidada no Supabase: {error}")
 
-            refresh_token = user_data.get(["refresh_token"])
+            refresh_token = user_data.get("refresh_token")
 
             if refresh_token:
                 try:
@@ -98,17 +100,11 @@ class AuthService:
 
                     if refresh and refresh.user and refresh.session:
 
-                        if hasattr(refresh.user, "model_dump"):
-                            user_dict = refresh.user.model_dump()
-                        elif hasattr(refresh.user, "dict"):
-                            user_dict = refresh.user.dict()
-                        else:
-                            user_dict = user_data.get("user")
-
                         new_session = {
                             "acess_token": refresh.session.access_token,
                             "refresh_token": refresh.session.refresh_token,
-                            "user": user_dict
+                            "user_id": refresh.user.id,
+                            "email":refresh.user.email
                         }
 
                         self._save_session(new_session)
@@ -151,21 +147,6 @@ class AuthService:
 
             with open(self.session_path, "w", encoding="utf-8") as file:
                 json.dump(user_data, file, indent=4)
-            
-            if os.name != "nt":
-                os.chmod(self.session_path, 0o600)
-
-            else:
-                username = os.getlogin()
-                command = (f'icacls "{self.session_path}" /inheritance:r' # remove permissões herdadas
-                           f'/grant:r "{username}":(R,W)')
-
-                subprocess.run(command,
-                               shell=True,
-                               check=True,
-                               stdout=subprocess.DEVNULL,
-                               stderr=subprocess.DEVNULL
-                               )   
             logger.debug("Sessão salva")
 
         except Exception as error:

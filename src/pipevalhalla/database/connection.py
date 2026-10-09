@@ -1,4 +1,6 @@
 import os
+import json
+from pathlib import Path
 from dotenv import load_dotenv
 from supabase import Client, create_client
 from pipevalhalla.log.pipelog import logger
@@ -19,6 +21,8 @@ class DatabaseConnection:
 
         self.client: Client = None
         self.connect()
+
+        self._restore_session()
 
     def connect(self) -> Client:
         "Conecta com o Supabase e devolve o client"
@@ -43,3 +47,25 @@ class DatabaseConnection:
             except Exception as error:
                 logger.error(f"Falha ao enviar o token: {error}", exc_info=True)
                 raise RuntimeError("Error ao enviar as credenciais ao banco.")
+
+    def _restore_session(self) -> None:
+        '''Lê o token da session atual e envia para identificação do supabase'''
+
+        session_path = Path("~/.pipevalhalla/.session").expanduser()
+
+        if not session_path.exists():
+            logger.debug("Arquivo de sessão não encontrado para auto-autenticação.")
+            return
+
+        try:
+            with open(session_path, "r", encoding="utf-8") as session_file:
+                user_data = json.load(session_file)
+
+            if isinstance(user_data, dict) and "acess_token" in user_data:
+                self.set_session_token(user_data["acess_token"])
+                logger.debug("Acess_Token enviado para o client.")
+            else:
+                logger.warning("Arquivo .session encontrado, mas o campo 'acess_token' está ausente.")
+
+        except Exception as error:
+            logger.error(f"Erro ao restaurar sessão no DatabaseConnection: {error}")

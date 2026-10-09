@@ -103,8 +103,9 @@ class MatchDAO:
             i += 1
             player_key_info = match_data.get(player_key, False)
             if player_key_info:
-                players_to_insert.append(player_key)
-                players_to_insert_id.append(player_key_info["BrawlhallaID"])
+                if player_key_info["BrawlhallaID"] != 0: # Bots não entrarão
+                    players_to_insert.append(player_key)
+                    players_to_insert_id.append(player_key_info["BrawlhallaID"])
             else:
                 break
 
@@ -182,12 +183,16 @@ class MatchDAO:
 
         while True:
             player_key = f"Player{i}"
+            i += 1
             player_data = match_data.get(player_key)
 
             if not player_data:
                 break
 
             bh_id = player_data.get("BrawlhallaID")
+            if bh_id == 0: # Bots não entrarão
+                continue
+
             player_loadout_data = player_data.get("Loadout", {})
 
             players_to_insert_loadout.append(
@@ -201,8 +206,6 @@ class MatchDAO:
                     "random": player_loadout_data.get("Random", False)
                 }
             )
-
-            i += 1
 
         if players_to_insert_loadout:
             # Envia loadout dos jogadores
@@ -227,14 +230,16 @@ class MatchDAO:
         i = 1
         while True:
             player_key = f"Player{i}"
+            i += 1
             player_data = match_data.get(player_key)
             
-
             if not player_data:
                 break
 
             bh_id = player_data.get("BrawlhallaID")
-            i += 1
+            if bh_id == 0: # Bots não entrarão
+                continue
+            
             for weapon in weapons:
                 weapon_data = player_data.get(weapon)
                 if not weapon_data:
@@ -274,13 +279,18 @@ class MatchDAO:
         i = 1
         while True:
             player_key = f"Player{i}"
+            i += 1
+            
             player_data = match_data.get(player_key)
 
             if not player_data:
                 break
 
             bh_id = player_data.get("BrawlhallaID")
-            i += 1
+
+
+            if bh_id == 0: # Bots não entrarão
+                continue
 
             for weapon in weapons:
                 weapon_data = player_data.get(weapon)
