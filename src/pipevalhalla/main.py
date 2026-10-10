@@ -2,6 +2,7 @@ import sys
 import os
 from dotenv import load_dotenv
 from supabase import create_client, Client
+from pathlib import Path
 
 from pipevalhalla.auth.authenticator import AuthService
 from pipevalhalla.services.Orchestrator import PipelineOrchestrator
@@ -11,7 +12,8 @@ from pipevalhalla.dao.players import PlayerDAO
 from pipevalhalla.database.connection import DatabaseConnection
 
 def main() -> None:
-    load_dotenv()
+    env_path = Path.home() / ".pipevalhalla" / ".env"
+    load_dotenv(dotenv_path=env_path)
 
     supabase_url = os.getenv("SUPABASE_URL")
     supabase_key = os.getenv("SUPABASE_KEY")

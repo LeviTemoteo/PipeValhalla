@@ -13,8 +13,9 @@ Informacoes
 *.docx
 *.pdf
 docs/DFD
-docs/Diagrama de Sequencia
+docs/diagramas_de_sequencia/*.mmd
 docs/Fluxo Geral
 .log
 *.csv
 *.egg-info
+docs/manual_staff.md
