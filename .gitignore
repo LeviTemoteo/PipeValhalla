@@ -12,5 +12,9 @@ Informacoes
 *.zip
 *.docx
 *.pdf
-docs
+docs/DFD
+docs/Diagrama de Sequencia
+docs/Fluxo Geral
 .log
+*.csv
+*.egg-info
