@@ -1,50 +1,45 @@
-# PipeValhalla
+<p align="center">
+  <h1 align="center">PipeValhalla</h1>
+</p>
 
-Sistema de coleta de dados do Panteão de Valhalla.
+## O Panteão de Valhalla
 
-Por comandos via CLI, o sistema faz a extração de dados e envia os dados tratados ao Banco de Dados.
+Para quem é de fora do jogo, o **Panteão de Valhalla** é uma organização criada pela comunidade brasileira de *Brawlhalla*. Nela, é administrado um campeonato de pontos corridos com foco em clãs (times) e seus confrontos (um formato de e-Sports diferenciado).
 
----
+Idealizada originalmente pelo player **YaksaTH** e continuada pela Staff do Panteão, o campeão é o clã com mais pontos adquiridos durante a temporada.
 
-## Panteão de Valhalla
-
-Para quem é de fora do jogo, o Panteão de Valhalla é uma organização criada pela comunidade brasileira de Brawlhalla, nela é administrado um campeonato de pontos corridos, tendo o foco em clãs (times) e seus confrontos. Um e-Sports diferenciado.
-
-Ideia estruturada pelo player YaksaTH e continuada pela a Staff do Panteão de Valhalla, o time com mais pontos no final do campeonato se torna o vencedor!
-
-Redes:
-
-- Canal de transmissão pela Twitch
-- Discord oficial
-- Site do Panteão
+**Acompanhe o Panteão:**
+*  [Canal de Transmissão (Twitch)](https://www.twitch.tv/panteaodevalhalla)
+*  [Discord Oficial](https://discord.com/invite/QNFGuJHFfg)
+*  [Site do Panteão](https://coliseurenascimento.great-site.net/index.php)
 
 ---
 
-## Sistema do Pipevalhalla
+## Sobre o PipeValhalla
 
-A ideia central desse sistema é automatizar a coleta de dados de **todas** as partidas realizadas no campeonato.
+O **PipeValhalla** é o sistema de extração de dados do Panteão. Através de comandos via CLI (Interface de Linha de Comando), a ferramenta automatiza a coleta de dados de **qualquer** partida realizada no campeonato, processando as informações e persistindo-as diretamente no Banco de Dados.
 
-Essa automatização se beneficia de uma opção de inicialização via Steam, que é o comando -writestats.
+### Principal Ferramenta: `-writestats`
 
-### -writestats
+Em torneios oficiais de *Brawlhalla*, a coleta de informações das partidas transmitidas praticamente não existia. Para solucionar isso, a equipe de desenvolvedores do jogo disponibilizou uma opção de inicialização via Steam, o `-writestats`.
 
-Dentro das propriedades do Brawlhalla na Steam, é possível colocar uma opção de inicialização, o -writestats.
+Com essa opção ativada, o *Brawlhalla* gera automaticamente um arquivo `.json` detalhado com todas as estatísticas da partida (apenas para quem estiver na sala da partida e no modo espectador). Usando o PipeValhalla e com a flag `-writestats` ativada, o Panteão terá um banco de dados alimentado por esse arquivo `.json`, que é também usado em campeonatos oficiais de *Brawlhalla*.
+* *Para conferir a estrutura base dos arquivos json, acesse:* `docs/partidas_base/`
 
-No início de campeonatos oficiais do Brawlhalla, havia um problema de coleta de informações das partidas, algo que é muito importante nos e-Sports, com isso, os desenvolvedores do jogo criaram um inicializador de registro de dados da partida.
+---
 
-Tendo essa opção ativada, o Brawlhalla irá guardar um arquivo no formato JSON, havendo todos os dados da partida. 
-O PipeValhalla tira vantagem justamente desse arquivo! Por tanto, o mesmo arquivo que o Brawlhalla oficialmente usa em seus torneios, o Panteão de Valhalla usará para seus campeonatos.
+## Estrutura e Dados
 
-Para saber como é esse arquivo, dê uma olhada em: docs/partidas_base/...
+Para maior transparência e visualização da modelagem, disponibilizamos os recursos estruturais do projeto:
 
-## Banco Modelo
+* **Planilha de Modelo (Google Sheets):** [Acesse o modelo do banco](https://docs.google.com/spreadsheets/d/1MPmtRNx-gMNYI6uvHKEQ9nulzp03lpwjLLW-AeuBe_g/edit?gid=0#gid=0) *(contém 3 partidas de teste inseridas e o esquema das tabelas)*.
+* **Dicionário de Dados:** Disponível em `docs/dicionario_de_dados.md`.
 
-Para ter mais detalhes visualmente do banco de dados, criei uma planilha pelo Google Sheets:
+---
 
-https://docs.google.com/spreadsheets/d/1MPmtRNx-gMNYI6uvHKEQ9nulzp03lpwjLLW-AeuBe_g/edit?gid=0#gid=0
+## Tecnologias Utilizadas
 
-Está inserido 3 partidas de teste e o esquema das tabelas.
+O projeto foi construído utilizando:
 
-Caso tenha curiosidade sobre os dados, dê uma olhada em docs/dicionario_de_dados.md
-
-
+* **Linguagem:** Python
+* **Banco de Dados:** Supabase / PostgreSQL
