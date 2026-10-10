@@ -705,7 +705,7 @@ Esse dado é recebido direto do brawlhalla e checado pelo PipeValhalla na tabela
 | Tipo | VARCHAR(30) |
 | Nullable | No |
 
-Nome da arma usada pelo jogador na partida, chave estrangeira nessa tabela que vem da tabela `Armas`.
+Nome da arma usada pelo jogador na partida.
 
 
 

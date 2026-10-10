@@ -12,7 +12,7 @@ class AuthService:
 
     def __init__(self, db_connection: DatabaseConnection, session_path: str = "~/.pipevalhalla/.session"):
         self.db_connection = db_connection
-        self.client = db_connection.client
+        self.client = self.db_connection.client
         self.session_path = Path(session_path).expanduser()
         self.current_user: Optional[Dict[str, Any]] = None
 
@@ -99,7 +99,6 @@ class AuthService:
                     refresh = self.client.auth.refresh_session(refresh_token)
 
                     if refresh and refresh.user and refresh.session:
-
                         new_session = {
                             "acess_token": refresh.session.access_token,
                             "refresh_token": refresh.session.refresh_token,

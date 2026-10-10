@@ -58,7 +58,7 @@ class PlayerDAO:
             logger.error(f"Erro ao retornar o jogador {brawlhalla_id}: {error}")
             raise RuntimeError(f"Erro ao retornar o jogador {brawlhalla_id}: {error}")
 
-    def get_all_players(self) -> dict:
+    def get_all_players(self) -> list[dict]:
         '''Pega todos os jogadores cadastrados na tabela "Jogadores" no Supabase'''
         
         try:
