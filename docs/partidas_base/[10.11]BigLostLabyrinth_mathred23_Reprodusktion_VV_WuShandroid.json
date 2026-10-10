@@ -1,0 +1,760 @@
+{
+  "GameDuration": 212176,
+  "Player1": {
+    "TotalJumps": 57,
+    "DamageTaken": 0,
+    "BallResets": 0,
+    "Dashes": 7,
+    "TeamKOs": 3,
+    "AirDodges": 15,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 125056,
+    "Unarmed": {
+      "Recovery": {
+        "Uses": 1,
+        "TeamHits": 1,
+        "TeamDamage": 7.73
+      },
+      "nAir": {
+        "Uses": 2,
+        "EnemyDamage": 11.65,
+        "EnemyHits": 2
+      },
+      "nHeavy": {
+        "Uses": 1,
+        "EnemyDamage": 13.24,
+        "EnemyHits": 1
+      },
+      "nLight": {
+        "Uses": 3,
+        "EnemyDamage": 6.36,
+        "EnemyHits": 1,
+        "GCUses": 1,
+        "TeamHits": 1,
+        "TeamDamage": 6.19
+      },
+      "GroundPound": {
+        "Uses": 1,
+        "EnemyDamage": 9,
+        "EnemyHits": 1
+      },
+      "TimeHeld": 73040,
+      "sHeavy": {
+        "Uses": 2,
+        "EnemyDamage": 20.54,
+        "EnemyHits": 2
+      },
+      "sLight": {
+        "Uses": 1,
+        "TeamHits": 1,
+        "TeamDamage": 6.7
+      },
+      "DamageTaken": 0,
+      "dHeavy": {
+        "Uses": 1,
+        "EnemyDamage": 8.71,
+        "EnemyHits": 1
+      },
+      "dLight": {
+        "Uses": 2,
+        "GCUses": 1,
+        "GCTeamHits": 1,
+        "GCTeamDamage": 4.12,
+        "TeamHits": 2,
+        "TeamDamage": 8.25
+      }
+    },
+    "Greatsword": {
+      "Recovery": {
+        "Uses": 3,
+        "TeamHits": 2,
+        "TeamDamage": 20.62
+      },
+      "nHeavy": {
+        "Uses": 2,
+        "GCUses": 1
+      },
+      "TimeHeld": 125984,
+      "sHeavy": {
+        "Uses": 2,
+        "TeamKOs": 1,
+        "TeamHits": 2,
+        "TeamDamage": 34.8
+      },
+      "DamageTaken": 0,
+      "dHeavy": {
+        "Uses": 3
+      },
+      "Throw": {
+        "Uses": 3,
+        "EnemyDamage": 1.93,
+        "EnemyHits": 2,
+        "TeamHits": 1,
+        "TeamDamage": 0.74
+      },
+      "nAir": {
+        "Uses": 2,
+        "TeamHits": 1,
+        "TeamDamage": 8.76
+      },
+      "nLight": {
+        "Uses": 19,
+        "EnemyDamage": 39.2,
+        "EnemyHits": 6,
+        "GCUses": 2,
+        "GCTeamHits": 1,
+        "GCTeamDamage": 8.25,
+        "TeamHits": 6,
+        "TeamDamage": 50.52
+      },
+      "sAir": {
+        "Uses": 7,
+        "EnemyDamage": 9,
+        "EnemyHits": 1,
+        "TeamKOs": 2,
+        "TeamHits": 6,
+        "TeamDamage": 52.58
+      },
+      "sLight": {
+        "Uses": 14,
+        "EnemyDamage": 8.48,
+        "EnemyHits": 2,
+        "GCUses": 3,
+        "TeamHits": 8,
+        "TeamDamage": 41.24
+      },
+      "dAir": {
+        "Uses": 6,
+        "TeamHits": 3,
+        "TeamDamage": 9.28
+      },
+      "dLight": {
+        "Uses": 7,
+        "GCUses": 1,
+        "GCEnemyKOs": 1,
+        "GCEnemyHits": 1,
+        "TeamHits": 3,
+        "EnemyKOs": 1,
+        "TeamDamage": 17.01,
+        "GCEnemyDamage": 7.95,
+        "EnemyHits": 3,
+        "GCTeamHits": 1,
+        "GCTeamDamage": 7.73,
+        "EnemyDamage": 30.19
+      }
+    },
+    "PlayerName": "mathred23",
+    "Sword": {
+      "Throw": {
+        "Uses": 1
+      },
+      "DamageTaken": 0,
+      "TimeHeld": 3664
+    },
+    "DashJumps": 4,
+    "BrawlhallaID": 116127965,
+    "TeamDamageDealt": 264.42,
+    "DamageDealt": 158.31,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Greatsword",
+        "t": 49024
+      },
+      {
+        "i": "Unarmed",
+        "t": 125888
+      },
+      {
+        "i": "Greatsword",
+        "t": 126752
+      },
+      {
+        "i": "Unarmed",
+        "t": 128240
+      },
+      {
+        "i": "Greatsword",
+        "t": 128896
+      },
+      {
+        "i": "Unarmed",
+        "t": 130416
+      },
+      {
+        "i": "Greatsword",
+        "t": 131424
+      },
+      {
+        "i": "Unarmed",
+        "t": 177536
+      },
+      {
+        "i": "Sword",
+        "t": 183648
+      },
+      {
+        "i": "Unarmed",
+        "t": 187312
+      }
+    ],
+    "TotalDodges": 23,
+    "Harassments": 0,
+    "KOs": 1,
+    "Loadout": {
+      "ColorSchemeName": "Team Red",
+      "Random": false,
+      "Stance": "Base",
+      "SkinID": 457,
+      "KOEffectID": 1,
+      "LegendID": 54,
+      "LegendName": "JAEYUN",
+      "SkinName": "Base",
+      "WeaponSkin2": {
+        "WeaponSkinID": 1069,
+        "Weapon": "Greatsword",
+        "WeaponSkinName": "The Finisher"
+      },
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinID": 1068,
+        "Weapon": "Sword",
+        "WeaponSkinName": "The Cleaner"
+      },
+      "ColorSchemeID": 129,
+      "SidekickID": 1
+    },
+    "Clashes": 0,
+    "TimeOnWall": 1440,
+    "TeamNum": 1,
+    "BallHits": 0,
+    "Suicides": 3,
+    "TimeInAir": 76192,
+    "Deaths": 3,
+    "BallDefenses": 0,
+    "AirJumps": 16
+  },
+  "BuildVersion": "10.11",
+  "Lives": 3,
+  "Player3": {
+    "TotalJumps": 0,
+    "DamageTaken": 76.57,
+    "BallResets": 0,
+    "Dashes": 0,
+    "TeamKOs": 0,
+    "AirDodges": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 205264,
+    "Unarmed": {
+      "DamageTaken": 76.57,
+      "TimeHeld": 212176
+    },
+    "PlayerName": "V.V",
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 9,
+        "t": 37856
+      },
+      {
+        "d": 19.66,
+        "t": 42160
+      },
+      {
+        "d": 28.37,
+        "t": 43328
+      },
+      {
+        "d": 41.61,
+        "t": 46000
+      },
+      {
+        "d": 43.2,
+        "t": 47552
+      },
+      {
+        "d": 44.79,
+        "t": 47744
+      },
+      {
+        "d": 46.38,
+        "t": 47936
+      },
+      {
+        "d": 47.97,
+        "t": 48208
+      },
+      {
+        "d": 52.2,
+        "t": 53984
+      },
+      {
+        "d": 58.03,
+        "t": 54624
+      },
+      {
+        "d": 65.45,
+        "t": 55136
+      },
+      {
+        "d": 69.68,
+        "t": 63408
+      },
+      {
+        "d": 76.57,
+        "t": 63792
+      }
+    ],
+    "DashJumps": 0,
+    "BrawlhallaID": 0,
+    "TeamDamageDealt": 0,
+    "DamageDealt": 0,
+    "TotalDodges": 0,
+    "Harassments": 0,
+    "KOs": 0,
+    "Loadout": {
+      "ColorSchemeName": "Team Blue",
+      "Random": false,
+      "Stance": "Base",
+      "SkinID": 650,
+      "KOEffectID": 1,
+      "LegendID": 64,
+      "LegendName": "VIVI",
+      "SkinName": "Base",
+      "WeaponSkin2": {
+        "WeaponSkinID": 1609,
+        "Weapon": "Pistol",
+        "WeaponSkinName": "Charmed, I'm Sure"
+      },
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinID": 1608,
+        "Weapon": "Boots",
+        "WeaponSkinName": "Aú Sem Mão"
+      },
+      "ColorSchemeID": 133,
+      "SidekickID": 1
+    },
+    "Clashes": 0,
+    "TimeOnWall": 0,
+    "TeamNum": 2,
+    "BallHits": 0,
+    "Suicides": 0,
+    "TimeInAir": 6912,
+    "Deaths": 0,
+    "BallDefenses": 0,
+    "AirJumps": 0
+  },
+  "TeamDamage": true,
+  "Player4": {
+    "TotalJumps": 0,
+    "DamageTaken": 264.42,
+    "BallResets": 0,
+    "Dashes": 0,
+    "TeamKOs": 0,
+    "AirDodges": 0,
+    "TeamDamageTaken": 264.42,
+    "TimeOnGround": 136256,
+    "Unarmed": {
+      "DamageTaken": 264.42,
+      "TimeHeld": 166768
+    },
+    "PlayerName": "Wu Shandroid",
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 6.7,
+        "t": 8816
+      },
+      {
+        "d": 10.83,
+        "t": 12800
+      },
+      {
+        "d": 12.37,
+        "t": 17664
+      },
+      {
+        "d": 13.92,
+        "t": 17856
+      },
+      {
+        "d": 15.46,
+        "t": 18048
+      },
+      {
+        "d": 17.01,
+        "t": 18320
+      },
+      {
+        "d": 21.14,
+        "t": 29536
+      },
+      {
+        "d": 28.87,
+        "t": 32720
+      },
+      {
+        "d": 32.99,
+        "t": 68144
+      },
+      {
+        "d": 37.63,
+        "t": 68704
+      },
+      {
+        "d": 45.88,
+        "t": 69120
+      },
+      {
+        "d": 50,
+        "t": 71376
+      },
+      {
+        "d": 54.64,
+        "t": 71808
+      },
+      {
+        "d": 61.86,
+        "t": 72192
+      },
+      {
+        "d": 65.98,
+        "t": 74304
+      },
+      {
+        "d": 71.65,
+        "t": 74768
+      },
+      {
+        "d": 78.87,
+        "t": 75280
+      },
+      {
+        "d": 86.6,
+        "t": 91856
+      },
+      {
+        "d": 96.27,
+        "t": 92432
+      },
+      {
+        "d": 100.39,
+        "t": 94368
+      },
+      {
+        "d": 106.06,
+        "t": 94800
+      },
+      {
+        "d": 110.19,
+        "t": 98032
+      },
+      {
+        "d": 115.86,
+        "t": 98464
+      },
+      {
+        "d": 119.98,
+        "t": 100224
+      },
+      {
+        "d": 124.11,
+        "t": 101360
+      },
+      {
+        "d": 134.42,
+        "t": 103616
+      },
+      {
+        "d": 144.73,
+        "t": 106800
+      },
+      {
+        "d": 152.97,
+        "t": 108016
+      },
+      {
+        "d": 160.71,
+        "t": 112848
+      },
+      {
+        "d": 170.37,
+        "t": 113424
+      },
+      {
+        "d": 0,
+        "t": 116800
+      },
+      {
+        "d": 0.74,
+        "t": 130768
+      },
+      {
+        "d": 1.77,
+        "t": 133440
+      },
+      {
+        "d": 5.38,
+        "t": 133744
+      },
+      {
+        "d": 12.6,
+        "t": 134144
+      },
+      {
+        "d": 21.36,
+        "t": 136848
+      },
+      {
+        "d": 30.13,
+        "t": 138384
+      },
+      {
+        "d": 0,
+        "t": 140336
+      },
+      {
+        "d": 8.76,
+        "t": 148176
+      },
+      {
+        "d": 12.89,
+        "t": 159216
+      },
+      {
+        "d": 20.62,
+        "t": 162544
+      },
+      {
+        "d": 27.84,
+        "t": 167344
+      },
+      {
+        "d": 28.87,
+        "t": 167360
+      },
+      {
+        "d": 37.63,
+        "t": 170288
+      },
+      {
+        "d": 46.4,
+        "t": 171520
+      },
+      {
+        "d": 55.16,
+        "t": 172784
+      },
+      {
+        "d": 63.92,
+        "t": 174064
+      },
+      {
+        "d": 0,
+        "t": 176256
+      }
+    ],
+    "DashJumps": 0,
+    "BrawlhallaID": 0,
+    "TeamDamageDealt": 0,
+    "DamageDealt": 0,
+    "TotalDodges": 0,
+    "Harassments": 0,
+    "KOs": 0,
+    "Loadout": {
+      "ColorSchemeName": "Team Red",
+      "Random": false,
+      "Stance": "Base",
+      "SkinID": 107,
+      "KOEffectID": 1,
+      "LegendID": 29,
+      "LegendName": "WU SHANG",
+      "SkinName": "Base",
+      "WeaponSkin2": {
+        "WeaponSkinID": 341,
+        "Weapon": "Spear",
+        "WeaponSkinName": "Qiang"
+      },
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinID": 340,
+        "Weapon": "Fists",
+        "WeaponSkinName": "Iron Shackles"
+      },
+      "ColorSchemeID": 129,
+      "SidekickID": 1
+    },
+    "Clashes": 0,
+    "TimeOnWall": 0,
+    "TeamNum": 1,
+    "BallHits": 0,
+    "Suicides": 0,
+    "TimeInAir": 30512,
+    "Deaths": 3,
+    "BallDefenses": 0,
+    "AirJumps": 0
+  },
+  "MapName": "Big Lost Labyrinth",
+  "GameMode": "Stock",
+  "MapID": 59,
+  "Player2": {
+    "TotalJumps": 0,
+    "DamageTaken": 81.74,
+    "BallResets": 0,
+    "Dashes": 0,
+    "TeamKOs": 0,
+    "AirDodges": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 197520,
+    "Unarmed": {
+      "DamageTaken": 81.74,
+      "TimeHeld": 207440
+    },
+    "PlayerName": "Reprodusktion",
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 3.71,
+        "t": 116672
+      },
+      {
+        "d": 7.42,
+        "t": 118384
+      },
+      {
+        "d": 11.65,
+        "t": 122368
+      },
+      {
+        "d": 18.54,
+        "t": 122752
+      },
+      {
+        "d": 19.85,
+        "t": 126128
+      },
+      {
+        "d": 20.47,
+        "t": 128400
+      },
+      {
+        "d": 24.71,
+        "t": 145056
+      },
+      {
+        "d": 30.53,
+        "t": 145488
+      },
+      {
+        "d": 37.95,
+        "t": 145808
+      },
+      {
+        "d": 46.95,
+        "t": 148176
+      },
+      {
+        "d": 52.25,
+        "t": 154624
+      },
+      {
+        "d": 60.2,
+        "t": 162480
+      },
+      {
+        "d": 0,
+        "t": 164752
+      },
+      {
+        "d": 9.89,
+        "t": 192976
+      },
+      {
+        "d": 11.48,
+        "t": 206560
+      },
+      {
+        "d": 13.07,
+        "t": 206768
+      },
+      {
+        "d": 15.71,
+        "t": 207040
+      },
+      {
+        "d": 17.3,
+        "t": 209408
+      },
+      {
+        "d": 18.89,
+        "t": 209616
+      },
+      {
+        "d": 21.54,
+        "t": 209888
+      }
+    ],
+    "DashJumps": 0,
+    "BrawlhallaID": 0,
+    "TeamDamageDealt": 0,
+    "DamageDealt": 0,
+    "TotalDodges": 0,
+    "Harassments": 0,
+    "KOs": 0,
+    "Loadout": {
+      "ColorSchemeName": "Team Blue",
+      "Random": false,
+      "Stance": "Base",
+      "SkinID": 365,
+      "KOEffectID": 1,
+      "LegendID": 47,
+      "LegendName": "DUSK",
+      "SkinName": "Base",
+      "WeaponSkin2": {
+        "WeaponSkinID": 831,
+        "Weapon": "Orb",
+        "WeaponSkinName": "Sacred Relic"
+      },
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinID": 830,
+        "Weapon": "Spear",
+        "WeaponSkinName": "Elven Battle Spear"
+      },
+      "ColorSchemeID": 133,
+      "SidekickID": 1
+    },
+    "Clashes": 0,
+    "TimeOnWall": 320,
+    "TeamNum": 2,
+    "BallHits": 0,
+    "Suicides": 0,
+    "TimeInAir": 9600,
+    "Deaths": 1,
+    "BallDefenses": 0,
+    "AirJumps": 0
+  },
+  "ReplayVersion": 270,
+  "Teams": true
+}

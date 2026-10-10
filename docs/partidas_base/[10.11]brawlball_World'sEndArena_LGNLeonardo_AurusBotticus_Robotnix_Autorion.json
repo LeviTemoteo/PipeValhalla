@@ -1,0 +1,335 @@
+{
+  "Player1": {
+    "BrawlhallaID": 110036798,
+    "DamageTaken": 0,
+    "Dashes": 3,
+    "AirDodges": 2,
+    "PlayerName": "LGN_Leonardo",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 2,
+    "Harassments": 0,
+    "TeamNum": 1,
+    "Score": 1,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 0,
+    "TimeOnWall": 720,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "BrawlballNoHit",
+        "t": 1872
+      }
+    ],
+    "TimeInAir": 5824,
+    "BallResets": 0,
+    "AirJumps": 4,
+    "Unarmed": {
+      "TimeHeld": 1856,
+      "DamageTaken": 0
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 2336,
+    "DashJumps": 2,
+    "TotalJumps": 10,
+    "Loadout": {
+      "LegendName": "THEA",
+      "LegendID": 62,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Unchained Resolve",
+      "ColorSchemeID": 129,
+      "Random": false,
+      "ColorSchemeName": "Team Red",
+      "SkinName": "Base",
+      "SkinID": 620,
+      "WeaponSkin1": {
+        "WeaponSkinName": "Goldforged Battle Boots",
+        "Weapon": "Boots",
+        "WeaponSkinID": 1509
+      },
+      "SidekickID": 1,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Drake's Battalion",
+        "Weapon": "RocketLance",
+        "WeaponSkinID": 942
+      },
+      "KOEffectID": 31,
+      "Stance": "SupSpd"
+    },
+    "BrawlballNoHit": {
+      "TimeHeld": 7024,
+      "DamageTaken": 0
+    }
+  },
+  "Player4": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 0,
+    "Dashes": 0,
+    "AirDodges": 0,
+    "PlayerName": "Autorion",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 0,
+    "Harassments": 0,
+    "TeamNum": 2,
+    "Score": 0,
+    "Spear": {
+      "sAir": {
+        "Uses": 1
+      },
+      "TimeHeld": 7568,
+      "nAir": {
+        "Uses": 1
+      },
+      "DamageTaken": 0
+    },
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 0,
+    "TimeOnWall": 400,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Spear",
+        "t": 1328
+      }
+    ],
+    "TimeInAir": 6768,
+    "BallResets": 0,
+    "AirJumps": 1,
+    "Unarmed": {
+      "TimeHeld": 1312,
+      "DamageTaken": 0
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 1712,
+    "DashJumps": 0,
+    "TotalJumps": 6,
+    "Loadout": {
+      "LegendName": "ORION",
+      "LegendID": 5,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "ColorSchemeID": 133,
+      "Random": false,
+      "ColorSchemeName": "Team Blue",
+      "SkinName": "Base",
+      "SkinID": 1,
+      "WeaponSkin1": {
+        "WeaponSkinName": "Armored Attack Rocket",
+        "Weapon": "RocketLance",
+        "WeaponSkinID": 87
+      },
+      "SidekickID": 1,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Sunforged Spear",
+        "Weapon": "Spear",
+        "WeaponSkinID": 86
+      },
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "Player2": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 36.81,
+    "Dashes": 0,
+    "AirDodges": 0,
+    "PlayerName": "Aurus Botticus",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 0,
+    "Harassments": 0,
+    "TeamNum": 2,
+    "Score": 0,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 0,
+    "TimeOnWall": 0,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 12.27,
+        "t": 2032
+      },
+      {
+        "d": 16.99,
+        "t": 2480
+      },
+      {
+        "d": 17.93,
+        "t": 2544
+      },
+      {
+        "d": 18.88,
+        "t": 2656
+      },
+      {
+        "d": 24.54,
+        "t": 2736
+      },
+      {
+        "d": 36.81,
+        "t": 3312
+      }
+    ],
+    "TimeInAir": 5472,
+    "BallResets": 0,
+    "AirJumps": 3,
+    "Unarmed": {
+      "TimeHeld": 8880,
+      "DamageTaken": 36.81
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 3408,
+    "DashJumps": 0,
+    "TotalJumps": 6,
+    "Loadout": {
+      "LegendName": "AURUS",
+      "LegendID": 71,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "ColorSchemeID": 133,
+      "Random": false,
+      "ColorSchemeName": "Team Blue",
+      "SkinName": "Base",
+      "SkinID": 783,
+      "WeaponSkin1": {
+        "WeaponSkinName": "Boon of Mars",
+        "Weapon": "Chakram",
+        "WeaponSkinID": 2329
+      },
+      "SidekickID": 1,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Neptune's Blessing",
+        "Weapon": "Spear",
+        "WeaponSkinID": 2331
+      },
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "TeamDamage": false,
+  "Player3": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 0,
+    "Dashes": 0,
+    "AirDodges": 2,
+    "PlayerName": "Robotnix",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 2,
+    "Harassments": 0,
+    "TeamNum": 1,
+    "Score": 0,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 36.81,
+    "TimeOnWall": 128,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Scythe",
+        "t": 304
+      }
+    ],
+    "TimeInAir": 6816,
+    "BallResets": 0,
+    "AirJumps": 3,
+    "Unarmed": {
+      "TimeHeld": 288,
+      "DamageTaken": 0
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 1936,
+    "DashJumps": 0,
+    "Scythe": {
+      "sAir": {
+        "Uses": 1,
+        "EnemyHits": 1,
+        "EnemyDamage": 12.27
+      },
+      "TimeHeld": 8592,
+      "nAir": {
+        "Uses": 1,
+        "EnemyHits": 1,
+        "EnemyDamage": 12.27
+      },
+      "DamageTaken": 0,
+      "nLight": {
+        "EnemyHits": 1,
+        "GCUses": 1,
+        "GCEnemyHits": 1,
+        "Uses": 1,
+        "EnemyDamage": 12.27,
+        "GCEnemyDamage": 12.27
+      }
+    },
+    "TotalJumps": 8,
+    "Loadout": {
+      "LegendName": "NIX",
+      "LegendID": 34,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "ColorSchemeID": 129,
+      "Random": false,
+      "ColorSchemeName": "Team Red",
+      "SkinName": "Base",
+      "SkinID": 163,
+      "WeaponSkin1": {
+        "WeaponSkinName": "The Appointment",
+        "Weapon": "Scythe",
+        "WeaponSkinID": 413
+      },
+      "SidekickID": 1,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Death Throes",
+        "Weapon": "Pistol",
+        "WeaponSkinID": 414
+      },
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "ReplayVersion": 270,
+  "MapName": "World's End Arena",
+  "ScoreToWin": 1,
+  "GameDuration": 8880,
+  "MapID": 152,
+  "BuildVersion": "10.11",
+  "Teams": true,
+  "GameMode": "Brawlball"
+}

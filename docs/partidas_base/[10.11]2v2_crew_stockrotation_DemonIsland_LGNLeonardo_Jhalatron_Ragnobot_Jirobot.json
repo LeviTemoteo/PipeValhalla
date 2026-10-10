@@ -1,0 +1,748 @@
+{
+  "MapID": 135,
+  "Lives": 1,
+  "Player4": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 2.87,
+    "Dashes": 3,
+    "AirDodges": 0,
+    "PlayerName": "Jirobot",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 2,
+    "Harassments": 0,
+    "TeamNum": 2,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 28.01,
+    "TimeOnWall": 0,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 2.87,
+        "t": 77728
+      }
+    ],
+    "TimeInAir": 3904,
+    "BallResets": 0,
+    "AirJumps": 2,
+    "Unarmed": {
+      "sAir": {
+        "Uses": 1
+      },
+      "TimeHeld": 7408,
+      "nAir": {
+        "Uses": 1,
+        "EnemyDamage": 11.34,
+        "EnemyHits": 1
+      },
+      "DamageTaken": 2.87,
+      "dHeavy": {
+        "EnemyHits": 1,
+        "Uses": 1,
+        "EnemyDamage": 16.67,
+        "EnemyKOs": 1
+      }
+    },
+    "TeamKOs": 0,
+    "KOs": 1,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 3504,
+    "DashJumps": 0,
+    "TotalJumps": 4,
+    "Loadout": {
+      "LegendID": 43,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinName": "Shadow Edge",
+        "Weapon": "Sword",
+        "WeaponSkinID": 740
+      },
+      "ColorSchemeID": 133,
+      "Random": false,
+      "ColorSchemeName": "Team Blue",
+      "SkinName": "Base",
+      "SkinID": 296,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Daikama",
+        "Weapon": "Scythe",
+        "WeaponSkinID": 741
+      },
+      "SidekickID": 1,
+      "LegendName": "JIRO",
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "Player1": {
+    "BrawlhallaID": 110036798,
+    "DamageTaken": 185.77,
+    "Dashes": 19,
+    "AirDodges": 4,
+    "PlayerName": "LGN_Leonardo",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 1,
+    "Clashes": 0,
+    "TotalDodges": 5,
+    "Harassments": 0,
+    "TeamNum": 1,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 79.96,
+    "TimeOnWall": 240,
+    "Katar": {
+      "TimeHeld": 8976,
+      "nAir": {
+        "Uses": 1
+      },
+      "dLight": {
+        "Uses": 1
+      },
+      "sLight": {
+        "Uses": 1
+      },
+      "DamageTaken": 107.84,
+      "dAir": {
+        "Uses": 1,
+        "EnemyDamage": 9.94,
+        "EnemyHits": 1
+      },
+      "Throw": {
+        "Uses": 1
+      }
+    },
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Katar",
+        "t": 42560
+      },
+      {
+        "d": 16.28,
+        "t": 43392
+      },
+      {
+        "d": 19.3,
+        "t": 44880
+      },
+      {
+        "d": 22.31,
+        "t": 44896
+      },
+      {
+        "d": 25.33,
+        "t": 44912
+      },
+      {
+        "d": 28.05,
+        "t": 44928
+      },
+      {
+        "d": 30.76,
+        "t": 44944
+      },
+      {
+        "d": 33.48,
+        "t": 44960
+      },
+      {
+        "d": 36.2,
+        "t": 44976
+      },
+      {
+        "d": 38.91,
+        "t": 44992
+      },
+      {
+        "d": 52.49,
+        "t": 45056
+      },
+      {
+        "d": 60.09,
+        "t": 45888
+      },
+      {
+        "d": 70.94,
+        "t": 46368
+      },
+      {
+        "d": 78.54,
+        "t": 47280
+      },
+      {
+        "d": 89.39,
+        "t": 47760
+      },
+      {
+        "d": 96.99,
+        "t": 50000
+      },
+      {
+        "i": "Unarmed",
+        "t": 50480,
+        "d": 107.84
+      },
+      {
+        "d": 121.95,
+        "t": 52144
+      },
+      {
+        "i": "Fists",
+        "t": 53248
+      },
+      {
+        "d": 139.31,
+        "t": 57696
+      },
+      {
+        "d": 146.91,
+        "t": 59632
+      },
+      {
+        "d": 157.76,
+        "t": 60112
+      },
+      {
+        "i": "Unarmed",
+        "t": 64416
+      },
+      {
+        "i": "Fists",
+        "t": 65136
+      },
+      {
+        "i": "Unarmed",
+        "t": 69760
+      },
+      {
+        "i": "Katar",
+        "t": 70256
+      },
+      {
+        "i": "Unarmed",
+        "t": 71312
+      },
+      {
+        "i": "Fists",
+        "t": 71664
+      },
+      {
+        "d": 160.85,
+        "t": 75392
+      },
+      {
+        "d": 163.94,
+        "t": 75536
+      },
+      {
+        "d": 169.1,
+        "t": 75808
+      },
+      {
+        "i": "Unarmed",
+        "t": 77168
+      },
+      {
+        "i": "Fists",
+        "t": 77520
+      },
+      {
+        "d": 185.77,
+        "t": 80192
+      },
+      {
+        "i": "Unarmed",
+        "t": 80928,
+        "d": 0
+      }
+    ],
+    "TimeInAir": 24176,
+    "BallResets": 0,
+    "AirJumps": 6,
+    "Unarmed": {
+      "TimeHeld": 6064,
+      "DamageTaken": 14.11
+    },
+    "TeamKOs": 0,
+    "KOs": 1,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 15328,
+    "DashJumps": 6,
+    "TotalJumps": 16,
+    "Fists": {
+      "TimeHeld": 24704,
+      "nAir": {
+        "Uses": 2
+      },
+      "nHeavy": {
+        "Uses": 1,
+        "GCUses": 1
+      },
+      "nLight": {
+        "Uses": 2,
+        "EnemyDamage": 14.91,
+        "EnemyHits": 1
+      },
+      "dLight": {
+        "Uses": 1
+      },
+      "sAir": {
+        "Uses": 2,
+        "EnemyDamage": 17.2,
+        "EnemyHits": 1
+      },
+      "sHeavy": {
+        "EnemyHits": 1,
+        "Uses": 1,
+        "EnemyDamage": 33.26,
+        "EnemyKOs": 1
+      },
+      "sLight": {
+        "Uses": 3
+      },
+      "DamageTaken": 63.82,
+      "Throw": {
+        "Uses": 3,
+        "EnemyDamage": 4.64,
+        "EnemyHits": 2
+      }
+    },
+    "Loadout": {
+      "LegendID": 38,
+      "SidekickName": "Bjorn",
+      "KOEffectName": "Ragnarök",
+      "WeaponSkin1": {
+        "WeaponSkinName": "The Taggers",
+        "Weapon": "Fists",
+        "WeaponSkinID": 581
+      },
+      "ColorSchemeID": 129,
+      "Random": false,
+      "ColorSchemeName": "Team Red",
+      "SkinName": "All City Caspian",
+      "SkinID": 238,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Finishing Touches",
+        "Weapon": "Katar",
+        "WeaponSkinID": 582
+      },
+      "SidekickID": 132,
+      "LegendName": "CASPIAN",
+      "KOEffectID": 7,
+      "Stance": "SupStr"
+    }
+  },
+  "Player2": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 148.07,
+    "Dashes": 11,
+    "AirDodges": 10,
+    "PlayerName": "Jhalatron",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 1,
+    "Clashes": 0,
+    "TotalDodges": 13,
+    "Harassments": 0,
+    "TeamNum": 2,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 343.67,
+    "TimeOnWall": 272,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Axe",
+        "t": 6128
+      },
+      {
+        "d": 15.89,
+        "t": 7280
+      },
+      {
+        "d": 38.14,
+        "t": 9168
+      },
+      {
+        "d": 54.03,
+        "t": 22176
+      },
+      {
+        "d": 70.98,
+        "t": 28880
+      },
+      {
+        "d": 71.65,
+        "t": 49520
+      },
+      {
+        "d": 72.32,
+        "t": 49536
+      },
+      {
+        "d": 72.99,
+        "t": 49552
+      },
+      {
+        "d": 73.66,
+        "t": 49568
+      },
+      {
+        "d": 74.32,
+        "t": 49584
+      },
+      {
+        "d": 74.99,
+        "t": 49600
+      },
+      {
+        "d": 75.66,
+        "t": 49616
+      },
+      {
+        "d": 76.33,
+        "t": 49632
+      },
+      {
+        "d": 80.92,
+        "t": 49648
+      },
+      {
+        "d": 84.36,
+        "t": 54400
+      },
+      {
+        "d": 86.65,
+        "t": 54560
+      },
+      {
+        "d": 88.95,
+        "t": 54688
+      },
+      {
+        "d": 92.39,
+        "t": 54816
+      },
+      {
+        "d": 95.83,
+        "t": 55024
+      },
+      {
+        "d": 101.56,
+        "t": 56736
+      },
+      {
+        "d": 113.03,
+        "t": 57008
+      },
+      {
+        "d": 114.81,
+        "t": 64768
+      },
+      {
+        "d": 120.75,
+        "t": 66304
+      },
+      {
+        "d": 121.94,
+        "t": 66320
+      },
+      {
+        "d": 123.13,
+        "t": 66656
+      },
+      {
+        "i": "Unarmed",
+        "t": 66816,
+        "d": 148.07
+      },
+      {
+        "d": 0,
+        "t": 67776
+      }
+    ],
+    "TimeInAir": 43344,
+    "Axe": {
+      "Recovery": {
+        "Uses": 3
+      },
+      "nHeavy": {
+        "EnemyHits": 1,
+        "Uses": 1,
+        "EnemyDamage": 15.8,
+        "EnemyKOs": 1
+      },
+      "GroundPound": {
+        "Uses": 3,
+        "EnemyDamage": 22.68,
+        "EnemyHits": 1
+      },
+      "sHeavy": {
+        "Uses": 1
+      },
+      "DamageTaken": 148.07,
+      "dHeavy": {
+        "GCUses": 1,
+        "GCEnemyHits": 1,
+        "GCEnemyDamage": 36.21,
+        "Uses": 1,
+        "EnemyDamage": 36.21,
+        "EnemyHits": 1
+      },
+      "TimeHeld": 60688,
+      "nAir": {
+        "Uses": 6,
+        "EnemyDamage": 50.36,
+        "EnemyHits": 3
+      },
+      "nLight": {
+        "GCUses": 2,
+        "GCEnemyHits": 2,
+        "GCEnemyDamage": 35.05,
+        "Uses": 7,
+        "EnemyDamage": 126.37,
+        "EnemyHits": 7
+      },
+      "sAir": {
+        "Uses": 3,
+        "EnemyDamage": 17.53,
+        "EnemyHits": 1
+      },
+      "sLight": {
+        "GCUses": 1,
+        "GCEnemyHits": 1,
+        "GCEnemyDamage": 14.11,
+        "Uses": 4,
+        "EnemyDamage": 14.11,
+        "EnemyHits": 1
+      },
+      "dAir": {
+        "Uses": 4,
+        "EnemyDamage": 28.87,
+        "EnemyHits": 2
+      },
+      "dLight": {
+        "Uses": 5,
+        "GCUses": 2,
+        "EnemyDamage": 31.74,
+        "EnemyHits": 2
+      }
+    },
+    "BallResets": 0,
+    "AirJumps": 20,
+    "Unarmed": {
+      "TimeHeld": 7072,
+      "DamageTaken": 0
+    },
+    "TeamKOs": 0,
+    "KOs": 1,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 24144,
+    "DashJumps": 4,
+    "TotalJumps": 37,
+    "Loadout": {
+      "LegendID": 26,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinName": "Barbarian Axe",
+        "Weapon": "Axe",
+        "WeaponSkinID": 315
+      },
+      "ColorSchemeID": 133,
+      "Random": false,
+      "ColorSchemeName": "Team Blue",
+      "SkinName": "Base",
+      "SkinID": 116,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Barbarian Blade",
+        "Weapon": "Sword",
+        "WeaponSkinID": 316
+      },
+      "SidekickID": 1,
+      "LegendName": "JHALA",
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "TeamDamage": false,
+  "ReplayVersion": 270,
+  "MapName": "Demon Island",
+  "GameDuration": 80928,
+  "Player3": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 185.91,
+    "Dashes": 8,
+    "AirDodges": 2,
+    "PlayerName": "Ragnobot",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 1,
+    "Clashes": 0,
+    "TotalDodges": 6,
+    "Harassments": 0,
+    "TeamNum": 1,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 70.98,
+    "TimeOnWall": 0,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Axe",
+        "t": 4160
+      },
+      {
+        "d": 14.43,
+        "t": 10640
+      },
+      {
+        "d": 37.12,
+        "t": 11136
+      },
+      {
+        "d": 44.33,
+        "t": 13168
+      },
+      {
+        "d": 54.64,
+        "t": 13648
+      },
+      {
+        "d": 72.17,
+        "t": 15344
+      },
+      {
+        "d": 79.39,
+        "t": 16768
+      },
+      {
+        "d": 89.7,
+        "t": 17248
+      },
+      {
+        "d": 106.19,
+        "t": 18848
+      },
+      {
+        "d": 121.66,
+        "t": 25888
+      },
+      {
+        "d": 136.09,
+        "t": 29936
+      },
+      {
+        "d": 152.59,
+        "t": 30400
+      },
+      {
+        "d": 159.81,
+        "t": 31824
+      },
+      {
+        "i": "Unarmed",
+        "t": 32304,
+        "d": 170.12
+      },
+      {
+        "d": 185.91,
+        "t": 34944
+      },
+      {
+        "d": 0,
+        "t": 35424
+      }
+    ],
+    "TimeInAir": 24384,
+    "Axe": {
+      "TimeHeld": 28144,
+      "nAir": {
+        "Uses": 5,
+        "EnemyDamage": 16.95,
+        "EnemyHits": 1
+      },
+      "GroundPound": {
+        "Uses": 3,
+        "EnemyDamage": 22.25,
+        "EnemyHits": 1
+      },
+      "sHeavy": {
+        "Uses": 3,
+        "GCUses": 1
+      },
+      "sLight": {
+        "Uses": 1
+      },
+      "DamageTaken": 170.12,
+      "dLight": {
+        "Uses": 4,
+        "GCUses": 1,
+        "EnemyDamage": 31.78,
+        "EnemyHits": 2
+      }
+    },
+    "BallResets": 0,
+    "AirJumps": 11,
+    "Unarmed": {
+      "DamageTaken": 15.8,
+      "Recovery": {
+        "Uses": 1
+      },
+      "TimeHeld": 7264
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 11024,
+    "DashJumps": 3,
+    "TotalJumps": 20,
+    "Loadout": {
+      "LegendID": 31,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "WeaponSkin1": {
+        "WeaponSkinName": "Dragon Scale Katars",
+        "Weapon": "Katar",
+        "WeaponSkinID": 361
+      },
+      "ColorSchemeID": 129,
+      "Random": false,
+      "ColorSchemeName": "Team Red",
+      "SkinName": "Base",
+      "SkinID": 143,
+      "WeaponSkin2": {
+        "WeaponSkinName": "Dragon Axe",
+        "Weapon": "Axe",
+        "WeaponSkinID": 362
+      },
+      "SidekickID": 1,
+      "LegendName": "RAGNIR",
+      "KOEffectID": 1,
+      "Stance": "Base"
+    }
+  },
+  "BuildVersion": "10.11",
+  "Teams": true,
+  "GameMode": "Crew Battle"
+}

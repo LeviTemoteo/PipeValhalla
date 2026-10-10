@@ -1,0 +1,612 @@
+{
+  "Player1": {
+    "Orb": {
+      "TimeHeld": 33344,
+      "nAir": {
+        "Uses": 9,
+        "EnemyDamage": 65.11,
+        "EnemyHits": 5
+      },
+      "nLight": {
+        "Uses": 3
+      },
+      "Throw": {
+        "Uses": 1
+      },
+      "sAir": {
+        "Uses": 4,
+        "EnemyDamage": 45.58,
+        "EnemyHits": 3
+      },
+      "sLight": {
+        "Uses": 6,
+        "EnemyDamage": 32.56,
+        "EnemyHits": 3,
+        "GCUses": 1
+      },
+      "DamageTaken": 30.11,
+      "dAir": {
+        "Uses": 2,
+        "EnemyKOs": 1,
+        "EnemyDamage": 30.39,
+        "EnemyHits": 2
+      },
+      "dLight": {
+        "Uses": 3,
+        "EnemyDamage": 28.22,
+        "EnemyHits": 2
+      }
+    },
+    "BrawlhallaID": 110036798,
+    "DamageTaken": 38.8,
+    "Dashes": 29,
+    "AirDodges": 5,
+    "PlayerName": "LGN_Leonardo",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 0,
+    "Clashes": 0,
+    "TotalDodges": 9,
+    "Harassments": 0,
+    "TeamNum": 1,
+    "Score": 4,
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 327.73,
+    "TimeOnWall": 240,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "i": "Orb",
+        "t": 1920
+      },
+      {
+        "d": 3.26,
+        "t": 8880
+      },
+      {
+        "d": 6.51,
+        "t": 9088
+      },
+      {
+        "d": 11.94,
+        "t": 9360
+      },
+      {
+        "i": "Unarmed",
+        "t": 26080
+      },
+      {
+        "i": "Scythe",
+        "t": 26432
+      },
+      {
+        "d": 20.62,
+        "t": 35600
+      },
+      {
+        "i": "Unarmed",
+        "t": 50512
+      },
+      {
+        "i": "Orb",
+        "t": 50832
+      },
+      {
+        "d": 21.3,
+        "t": 52384
+      },
+      {
+        "d": 21.98,
+        "t": 52400
+      },
+      {
+        "d": 22.65,
+        "t": 52416
+      },
+      {
+        "d": 23.33,
+        "t": 52432
+      },
+      {
+        "d": 24.01,
+        "t": 52448
+      },
+      {
+        "d": 24.69,
+        "t": 52464
+      },
+      {
+        "d": 38.8,
+        "t": 53040
+      }
+    ],
+    "TimeInAir": 30560,
+    "BallResets": 0,
+    "AirJumps": 13,
+    "Unarmed": {
+      "TimeHeld": 2576,
+      "DamageTaken": 0
+    },
+    "TeamKOs": 0,
+    "KOs": 2,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 29200,
+    "DashJumps": 8,
+    "Scythe": {
+      "Recovery": {
+        "Uses": 1
+      },
+      "nAir": {
+        "Uses": 1,
+        "EnemyDamage": 14.11,
+        "EnemyHits": 1
+      },
+      "TimeHeld": 24080,
+      "nLight": {
+        "Uses": 2,
+        "EnemyDamage": 14.11,
+        "EnemyHits": 1
+      },
+      "Throw": {
+        "Uses": 1
+      },
+      "sAir": {
+        "Uses": 3,
+        "EnemyDamage": 28.22,
+        "EnemyHits": 2
+      },
+      "sLight": {
+        "Uses": 3,
+        "EnemyDamage": 40.15,
+        "EnemyHits": 3
+      },
+      "DamageTaken": 8.68,
+      "dAir": {
+        "Uses": 2,
+        "EnemyKOs": 1,
+        "EnemyDamage": 14.11,
+        "EnemyHits": 1
+      },
+      "dLight": {
+        "Uses": 3,
+        "EnemyDamage": 15.19,
+        "EnemyHits": 1
+      }
+    },
+    "TotalJumps": 28,
+    "Loadout": {
+      "WeaponSkin1": {
+        "WeaponSkinName": "Ninpō: Kusarenka",
+        "Weapon": "Scythe",
+        "WeaponSkinID": 2259
+      },
+      "KOEffectID": 39,
+      "LegendID": 48,
+      "SidekickName": "Kagari",
+      "KOEffectName": "Darkheart Metamorphosis",
+      "ColorSchemeID": 129,
+      "Random": false,
+      "ColorSchemeName": "Team Red",
+      "SkinName": "Cozy Sweater Fait",
+      "SkinID": 643,
+      "SidekickID": 129,
+      "LegendName": "FAIT",
+      "WeaponSkin2": {
+        "WeaponSkinName": "Orb of Mercy",
+        "Weapon": "Orb",
+        "WeaponSkinID": 2063
+      },
+      "Stance": "Base"
+    }
+  },
+  "ReplayVersion": 270,
+  "MapName": "Demon Island",
+  "GameDuration": 60000,
+  "MapID": 135,
+  "Player2": {
+    "BrawlhallaID": 0,
+    "DamageTaken": 327.73,
+    "Dashes": 0,
+    "AirDodges": 3,
+    "PlayerName": "Mirandroid",
+    "BallDefenses": 0,
+    "TeamDamageDealt": 0,
+    "Deaths": 2,
+    "Clashes": 0,
+    "TotalDodges": 3,
+    "Harassments": 0,
+    "TeamNum": 2,
+    "Score": -2,
+    "Spear": {
+      "sAir": {
+        "Uses": 1
+      },
+      "Recovery": {
+        "Uses": 1
+      },
+      "TimeHeld": 9744,
+      "DamageTaken": 69.45
+    },
+    "BallHits": 0,
+    "Suicides": 0,
+    "DamageDealt": 38.8,
+    "TimeOnWall": 0,
+    "Sequence": [
+      {
+        "i": "Unarmed",
+        "t": 16,
+        "d": 0
+      },
+      {
+        "d": 6.51,
+        "t": 5968
+      },
+      {
+        "d": 7.05,
+        "t": 6096
+      },
+      {
+        "d": 7.6,
+        "t": 6112
+      },
+      {
+        "d": 8.14,
+        "t": 6128
+      },
+      {
+        "d": 8.68,
+        "t": 6144
+      },
+      {
+        "d": 9.04,
+        "t": 6160
+      },
+      {
+        "d": 9.41,
+        "t": 6176
+      },
+      {
+        "d": 9.77,
+        "t": 6192
+      },
+      {
+        "d": 10.85,
+        "t": 6208
+      },
+      {
+        "d": 23.87,
+        "t": 6512
+      },
+      {
+        "d": 37.98,
+        "t": 7216
+      },
+      {
+        "d": 51,
+        "t": 7728
+      },
+      {
+        "d": 57.52,
+        "t": 10304
+      },
+      {
+        "d": 66.2,
+        "t": 10576
+      },
+      {
+        "d": 80.3,
+        "t": 11216
+      },
+      {
+        "d": 93.33,
+        "t": 11632
+      },
+      {
+        "i": "Spear",
+        "t": 13488
+      },
+      {
+        "d": 99.84,
+        "t": 14288
+      },
+      {
+        "d": 100.38,
+        "t": 14416
+      },
+      {
+        "d": 100.92,
+        "t": 14432
+      },
+      {
+        "d": 101.47,
+        "t": 14448
+      },
+      {
+        "d": 102.01,
+        "t": 14464
+      },
+      {
+        "d": 102.37,
+        "t": 14480
+      },
+      {
+        "d": 102.73,
+        "t": 14496
+      },
+      {
+        "d": 103.09,
+        "t": 14512
+      },
+      {
+        "d": 104.18,
+        "t": 14528
+      },
+      {
+        "d": 117.2,
+        "t": 14832
+      },
+      {
+        "d": 123.71,
+        "t": 15280
+      },
+      {
+        "d": 132.39,
+        "t": 15552
+      },
+      {
+        "d": 138.91,
+        "t": 17744
+      },
+      {
+        "d": 147.59,
+        "t": 18016
+      },
+      {
+        "d": 162.78,
+        "t": 21184
+      },
+      {
+        "i": "Unarmed",
+        "t": 23232,
+        "d": 0
+      },
+      {
+        "d": 7.6,
+        "t": 29744
+      },
+      {
+        "d": 11.94,
+        "t": 29952
+      },
+      {
+        "d": 26.04,
+        "t": 30288
+      },
+      {
+        "d": 31.47,
+        "t": 30704
+      },
+      {
+        "d": 32.56,
+        "t": 30768
+      },
+      {
+        "d": 33.64,
+        "t": 30880
+      },
+      {
+        "d": 40.15,
+        "t": 30960
+      },
+      {
+        "d": 47.75,
+        "t": 34592
+      },
+      {
+        "d": 54.26,
+        "t": 34864
+      },
+      {
+        "i": "Scythe",
+        "t": 36544
+      },
+      {
+        "d": 61.86,
+        "t": 37584
+      },
+      {
+        "d": 68.37,
+        "t": 37856
+      },
+      {
+        "d": 73.79,
+        "t": 38304
+      },
+      {
+        "d": 74.88,
+        "t": 38464
+      },
+      {
+        "d": 83.56,
+        "t": 38624
+      },
+      {
+        "d": 97.67,
+        "t": 39152
+      },
+      {
+        "d": 111.78,
+        "t": 40224
+      },
+      {
+        "d": 116.12,
+        "t": 42960
+      },
+      {
+        "d": 117.2,
+        "t": 43024
+      },
+      {
+        "d": 118.29,
+        "t": 43088
+      },
+      {
+        "d": 119.37,
+        "t": 43120
+      },
+      {
+        "d": 125.88,
+        "t": 43344
+      },
+      {
+        "i": "Unarmed",
+        "t": 45568,
+        "d": 0
+      },
+      {
+        "d": 6.51,
+        "t": 57936
+      },
+      {
+        "d": 7.05,
+        "t": 58064
+      },
+      {
+        "d": 7.6,
+        "t": 58080
+      },
+      {
+        "d": 8.14,
+        "t": 58096
+      },
+      {
+        "d": 8.68,
+        "t": 58112
+      },
+      {
+        "d": 9.04,
+        "t": 58128
+      },
+      {
+        "d": 9.41,
+        "t": 58144
+      },
+      {
+        "d": 9.77,
+        "t": 58160
+      },
+      {
+        "d": 10.85,
+        "t": 58176
+      },
+      {
+        "d": 23.87,
+        "t": 58512
+      },
+      {
+        "d": 39.07,
+        "t": 59136
+      }
+    ],
+    "TimeInAir": 36288,
+    "BallResets": 0,
+    "AirJumps": 12,
+    "Unarmed": {
+      "Recovery": {
+        "Uses": 1
+      },
+      "nAir": {
+        "Uses": 3,
+        "EnemyDamage": 11.94,
+        "EnemyHits": 1
+      },
+      "TimeHeld": 31760,
+      "nLight": {
+        "Uses": 1
+      },
+      "GroundPound": {
+        "Uses": 2
+      },
+      "sAir": {
+        "Uses": 1
+      },
+      "sLight": {
+        "Uses": 1,
+        "EnemyDamage": 14.11,
+        "EnemyHits": 1
+      },
+      "DamageTaken": 186.65,
+      "dAir": {
+        "Uses": 4,
+        "EnemyDamage": 4.07,
+        "EnemyHits": 1
+      },
+      "dHeavy": {
+        "Uses": 1
+      },
+      "dLight": {
+        "GCEnemyDamage": 8.68,
+        "GCUses": 1,
+        "Uses": 2,
+        "EnemyDamage": 8.68,
+        "EnemyHits": 1,
+        "GCEnemyHits": 1
+      }
+    },
+    "TeamKOs": 0,
+    "KOs": 0,
+    "TeamDamageTaken": 0,
+    "TimeOnGround": 14240,
+    "DashJumps": 0,
+    "Scythe": {
+      "Recovery": {
+        "Uses": 1
+      },
+      "nLight": {
+        "Uses": 1
+      },
+      "sAir": {
+        "Uses": 1
+      },
+      "TimeHeld": 9024,
+      "DamageTaken": 71.62,
+      "dAir": {
+        "Uses": 1
+      }
+    },
+    "TotalJumps": 17,
+    "Loadout": {
+      "WeaponSkin1": {
+        "WeaponSkinName": "Scythe of the Sands",
+        "Weapon": "Scythe",
+        "WeaponSkinID": 411
+      },
+      "KOEffectID": 1,
+      "LegendID": 33,
+      "SidekickName": "VALKRI Mk 1",
+      "KOEffectName": "Smoke N' Stars",
+      "ColorSchemeID": 133,
+      "Random": false,
+      "ColorSchemeName": "Team Blue",
+      "SkinName": "Base",
+      "SkinID": 162,
+      "SidekickID": 1,
+      "LegendName": "MIRAGE",
+      "WeaponSkin2": {
+        "WeaponSkinName": "Spear of the Nile",
+        "Weapon": "Spear",
+        "WeaponSkinID": 412
+      },
+      "Stance": "Base"
+    }
+  },
+  "BuildVersion": "10.11",
+  "Teams": true,
+  "GameMode": "Timed",
+  "TeamDamage": false
+}
