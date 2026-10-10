@@ -117,6 +117,10 @@ Quantidade de vidas (stocks) definidos para cada jogador.
 | Tipo | INT |
 | Nullable | No |
 
+Duração total da partida em milissegundos.
+A partida pode estar configurada 8 minutos, mas esse dado irá calcular o tempo de início da partida até a partida ser finalizada.
+
+
 ## score_to_win
 
 | Propriedade | Value |
