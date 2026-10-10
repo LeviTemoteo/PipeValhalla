@@ -1,0 +1,32 @@
+
+sequenceDiagram
+    actor Staff
+    participant CLI as CLIHandler
+    participant Auth as AuthService
+    participant Pipeline as PipelineOrchestrator
+    participant Reader as CSVReader
+    participant DAO as PlayerDAO
+    participant Conn as DatabaseConnection
+    participant SB as Supabase
+
+    Staff->>CLI: Seleciona sincronizar jogadores
+    CLI->>Auth: is_authenticated()
+    Auth-->>CLI: Estado da sessão
+
+    alt Sessão válida
+        CLI-->>Staff: Solicita caminho do CSV
+        Staff->>CLI: Informa caminho
+        CLI->>Pipeline: send_players(file_path)
+        Pipeline->>Reader: read_players()
+        Reader->>Reader: _transform_row(row)
+        Reader-->>Pipeline: Lista de jogadores transformados
+        Pipeline->>DAO: sync_players(players_data)
+        DAO->>Conn: Obtém client
+        DAO->>SB: Sincroniza jogadores
+        SB-->>DAO: Resultado da sincronização
+        DAO-->>Pipeline: Status da operação
+        Pipeline-->>CLI: Resultado
+        CLI-->>Staff: Exibe status
+    else Sessão inválida
+        CLI-->>Staff: Solicita novo login
+    end

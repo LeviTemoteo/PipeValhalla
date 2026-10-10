@@ -1,0 +1,29 @@
+
+sequenceDiagram
+    actor Staff
+    participant CLI as CLIHandler
+    participant Auth as AuthService
+    participant Pipeline as PipelineOrchestrator
+    participant DAO as MatchDAO
+    participant Conn as DatabaseConnection
+    participant SB as Supabase
+
+    Staff->>CLI: Seleciona excluir partida
+    CLI->>Auth: is_authenticated()
+    Auth-->>CLI: Estado da sessão
+
+    alt Sessão inválida
+        CLI-->>Staff: Solicita novo login
+    else Sessão válida
+        CLI-->>Staff: Solicita ID da partida
+        Staff->>CLI: Informa ID
+        CLI->>Pipeline: delete_match(match_id)
+        Pipeline->>DAO: delete_match(match_id)
+        DAO->>Conn: Obtém client
+        DAO->>SB: Solicita exclusão da partida
+        Note over SB: Verifica permissões configuradas
+        SB-->>DAO: Resultado da exclusão
+        DAO-->>Pipeline: Status da operação
+        Pipeline-->>CLI: Resultado
+        CLI-->>Staff: Exibe confirmação ou erro
+    end
