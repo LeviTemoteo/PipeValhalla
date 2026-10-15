@@ -1,17 +1,24 @@
 <p align="center">
-  <h1 align="center">PipeValhalla</h1>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+    <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+  </p>
 </p>
 
-## O Panteão de Valhalla
+<p align="center">
+  <img src="assets/panteao_banner.png" alt="O Panteão de Valhalla" width="50%">
+</p>
 
 Para quem é de fora do jogo, o **Panteão de Valhalla** é uma organização criada pela comunidade brasileira de *Brawlhalla*. Nela, é administrado um campeonato de pontos corridos com foco em clãs (times) e seus confrontos (um formato de e-Sports diferenciado).
 
 Idealizada originalmente pelo player **YaksaTH** e continuada pela Staff do Panteão, o campeão é o clã com mais pontos adquiridos durante a temporada.
 
 **Acompanhe o Panteão:**
-*  [Canal de Transmissão (Twitch)](https://www.twitch.tv/panteaodevalhalla)
-*  [Discord Oficial](https://discord.com/invite/QNFGuJHFfg)
-*  [Site do Panteão](https://coliseurenascimento.great-site.net/index.php)
+<br>
+  <br><img src="assets/twitch_logo.jpg" width="40" alt="Twitch"> [Canal de Transmissão (Twitch)](https://www.twitch.tv/panteaodevalhalla)
+  <br><img src="assets/discord_logo.jpg" width="40" alt="Discord"> [Discord Oficial](https://discord.com/invite/QNFGuJHFfg)
+  <br><img src="assets/panteao_logo.png" width="40" alt="Site"> [Site do Panteão](https://coliseurenascimento.great-site.net/index.php)
 
 ---
 
@@ -29,6 +36,12 @@ Com essa opção ativada, o *Brawlhalla* gera automaticamente um arquivo `.json`
 ---
 
 ## Estrutura e Dados
+
+Demonstração do funcionamento do sistema executando o comando de adicionar partida ao banco de dados:
+
+<p align="center">
+  <img src="assets/match_add.gif" alt="Comando de adicionar partida ao banco de dados" width="1000"/>
+</p>
 
 Para maior transparência e visualização da modelagem, disponibilizamos os recursos estruturais do projeto:
 
